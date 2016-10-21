@@ -3,7 +3,7 @@
 命令行工具
 
 ## todo
-- .gitignore 文件拷贝
+- 父子命令
 
 
 # push
@@ -24,3 +24,20 @@ Usage: push -m [options]
 
 示例：
   push -m "update"
+
+
+# copyfile
+复制某常用文件（如 .gitignore）到当前目录
+
+Usage: copyfile [-f] [name]
+
+命令：
+  ls  列出可复制的文件列表
+
+选项：
+  -n, --name  文件名            [字符串] [必需] [默认值: ""]
+  -h, --help  显示帮助信息                            [布尔]
+
+示例：
+  copyfile -f ".gitignore"
+  copyfile .gitignore
