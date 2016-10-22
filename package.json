@@ -1,9 +1,8 @@
 {
-  "name": "cli",
+  "name": "kk-cli",
   "version": "0.0.1",
   "bin": {
-    "push": "./bin/push.js",
-    "copyfile": "./bin/copyfile.js"
+    "kk": "./cli.js"
   },
   "dependencies": {
     "shelljs": "^0.7.4",
