@@ -24,8 +24,6 @@ Usage: push [msg]
 
 示例：
   push "update"
-  push update
-
 
 
 # copy
