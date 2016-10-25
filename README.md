@@ -4,10 +4,12 @@
 
 
 # todo
-- 改成 lets 
-lets push
-lets copy
 
+- 
+
+
+
+> 以下都是子命令，即前面还需加上 `lets`，如 `lets push "update"`
 
 # push
 
@@ -29,6 +31,7 @@ Usage: push [msg]
 
 
 # copy
+
 复制某常用文件（如 .gitignore）到当前目录
 
 Usage: copy <filename>
