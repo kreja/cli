@@ -1,8 +1,8 @@
 {
-  "name": "kk-cli",
+  "name": "lets-cli",
   "version": "0.0.1",
   "bin": {
-    "kk": "./cli.js"
+    "lets": "./cli.js"
   },
   "dependencies": {
     "shelljs": "^0.7.4",

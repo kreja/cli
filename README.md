@@ -1,10 +1,12 @@
-# kk-cli
+# lets-cli
 
 命令行工具
 
 
 # todo
-
+- 改成 lets 
+lets push
+lets copy
 
 
 # push

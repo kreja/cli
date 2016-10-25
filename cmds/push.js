@@ -10,7 +10,7 @@
 
 require('shelljs/global');
 var fs = require('fs');
-var KK = require('../kk');
+var LETS = require('../lets');
 
 Object.assign(exports, {
   command: 'push [msg]',
@@ -36,20 +36,20 @@ Object.assign(exports, {
     var msg = argv.msg || 'update';
 
     if (!which('git')) {
-      KK.fail('Sorry, this script requires git');
+      LETS.fail('Sorry, this script requires git');
     }
     echo('adding...');
     if (exec('git add .').code !== 0) {
-      KK.fail('Git add failed');
+      LETS.fail('Git add failed');
     }
     echo('committing...');
-    if (exec('git commit -am "' + msg + '"').code !== 0) {
-      KK.fail('Git commit failed');
+    if (exec('git commit -m "' + msg + '"').code !== 0) {
+      LETS.fail('Git commit failed');
     }
-    echo('pushing...');
+    echo('pushing... git push origin ' + branch);
     if (exec('git push origin ' + branch).code !== 0) {
-      KK.fail('Git push failed');
+      LETS.fail('Git push failed');
     }
-    KK.done();
+    LETS.done();
   }
 });
