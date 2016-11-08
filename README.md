@@ -5,7 +5,7 @@
 
 # todo
 
-- 
+- copy：confirm 是否要覆盖，要覆盖就用 -C 强制覆盖
 
 
 
